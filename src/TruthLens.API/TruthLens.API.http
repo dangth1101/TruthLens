@@ -1,0 +1,6 @@
+@TruthLens.API_HostAddress = http://localhost:5198
+
+GET {{TruthLens.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
