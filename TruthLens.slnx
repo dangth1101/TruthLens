@@ -5,4 +5,7 @@
     <Project Path="src/TruthLens.Domain/TruthLens.Domain.csproj" />
     <Project Path="src/TruthLens.Infrastructure/TruthLens.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TruthLens.Domain.Tests/TruthLens.Domain.Tests.csproj" />
+  </Folder>
 </Solution>
