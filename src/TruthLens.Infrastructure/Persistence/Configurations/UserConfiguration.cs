@@ -16,14 +16,10 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .IsRequired()
             .HasMaxLength(100);
 
-        builder.Property(u => u.Email)
+        builder.Property(u => u.Password)
             .IsRequired()
             .HasMaxLength(256);
 
-        builder.HasIndex(u => u.Email).IsUnique();
-
         builder.Property(u => u.CreatedAt).IsRequired();
-        builder.Property(u => u.ModifiedAt).IsRequired();
-        builder.Property(u => u.UploadCount).IsRequired();
     }
 }

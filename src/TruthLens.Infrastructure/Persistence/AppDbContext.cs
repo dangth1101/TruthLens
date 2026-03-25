@@ -10,9 +10,9 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<User> Users { get; set; }
-    public DbSet<RankEntry> RankEntries { get; set; }
-    public DbSet<MediaUpload> MediaUploads { get; set; }
-    public DbSet<DuplicateRecord> DuplicateRecords { get; set; }
+    public DbSet<MediaFile> Files { get; set; }
+    public DbSet<UploadEvent> UploadEvents { get; set; }
+    public DbSet<FileSimilarity> FileSimilarities { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
